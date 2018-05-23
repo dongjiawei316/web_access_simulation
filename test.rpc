@@ -1,0 +1,8 @@
+[
+	{"type": "post", "data": {"jsonrpc": "2.0", "method":"network.get","params": { "net": [ {"status":""} ] }, "id": "testid" }},
+	{"type": "sleep", "data": 1},
+	{"type": "post", "data": {"jsonrpc": "2.0", "method":"encoder.get","params": { "send": { "ctrl": 1}, "venc": { "enc_ctrl": 0 }}, "id": "testid" }},
+	{"type": "sleep", "data": 2},
+	{"type": "post", "data": {"jsonrpc": "2.0", "method":"encoder.set","params": { "send": { "ctrl": 1}, "venc": { "enc_ctrl": 0 }, "aenc": { "ctrl": 1, "codec": 2, "volume": 1, "aac_channel": 1, "aac_bitrate": 0, "aac_samplerate": 0, "aac_header": 0, "g711_compand": 0, "g729_interval": 3 }, "venc_ext": { "enable_Bframe": 0, "enable_gdr": 0, "enable_ROI": 0 } }, "id": "testid" }}
+]
+
